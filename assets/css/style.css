@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Arial',sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+.esconder{
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    width: 5rem;
+    height: 5rem;
+    background: #c2846c url(../images/menu.png);
+    background-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1000;
+}
+.esconder.active{
+    background: #c2846c url(../images/close.png);
+    background-size: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+section{
+    padding: 10rem;
+    min-height: 100vh;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #936756 , #fff7f3);
+}
+.banner .imgSidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50rem;
+    height: 100%;
+}
+.banner .imgSidebar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.banner .contentBx , .sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 50rem);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+.banner .contentBx h4 {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: 300;
+
+}
+.banner .contentBx h4 span {
+    color: #936756;
+    font-size: 1.5em;
+    font-weight: 550;
+    cursor: pointer;
+}
+.banner .contentBx p {
+    font-size: 1.5em;
+    color: #000;
+    line-height: 1em;
+    padding: 20px;
+    border: 2px solid #292828;
+    border-radius: 6px;
+}
+.logoText {
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    background: #c2846c;
+    color: #fff;
+    padding: 0 5px;
+}
+p{
+    font-size: 1.4em;
+    margin: 20px 0;
+    font-weight: 300;
+}
+.btn {
+    position: relative;
+    background: #c2846c;
+    color: #fff;
+    padding: 1rem 3rem;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    left: 25rem;
+}
+.btn:hover{
+    background: #333;
+    
+}
+.sidebar {
+    position: fixed;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1%;
+    padding: 4rem;
+    z-index: 100;
+    right: 100%;
+}
+.sidebar.active{
+    right: 0;
+}
+.sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sidebar ul li {
+    list-style: none;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.sidebar ul li a:hover {
+    color: #c2846c;
+}
+.redes {
+    position: absolute;
+    left: 30rem;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes li{
+    margin-right: 1rem;
+    list-style: none;
+}
+.redes li img {
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+.redes li img:hover {
+    transform: scale(1);
+    opacity: calc(0.8);
+    transition: all 0.5s;
+}
+.titulo {
+    width: 100%;
+    text-align: center;
+}
+.titulo h2{
+    position: relative;
+    color: #c2846c;
+    margin: 10px;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.titulo p {
+    max-width: 70rem;
+    display: inline-block;
+}
+.titulo h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+    width: 9rem;
+    height: 0.4rem;
+    background: #c2846c;
+}
+.titulo.branco h2 {
+    color: #c2846c;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.titulo.branco h2::before {
+    background: #333;
+}
+.titulo.branco p{
+    color: #fff;
+    font-size: 20px;
+}
+.sobre {
+    background: linear-gradient(90deg, #a39090 , #fff7f3);
+}
+.sobre .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.sobre .content .textoBox{
+    min-width: 49%;
+    width: 55%;
+    font-size: 18px;
+    text-align:initial;
+}
+.textoBox{
+    font-size: 1.7em;
+}
+.sobre .content .textoBox #gif{
+    width: 20rem;
+    height: 18rem;
+    margin-left: 14rem;
+}
+.sobre.content.imgBx {
+    margin-left: 4rem;
+}
+.sobre.content.imgBx img {
+    max-width: 100%;
+}
+.skills{
+    background: #333;
+}
+.skills .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skills .content .skillsBox{
+    padding: 40px 20px;
+    max-width: 340px;
+    margin: 18px;
+    transition: 0.5s;
+    text-align: center;
+    background: #f3f0f0;
+    transform: scale(0.9);
+}
+.skills .content .skillsBox:hover{
+    background: #c2846c;
+    cursor: pointer;
+    transform: scale(1);
+}
+.skills .content .skillsBox a{
+    color: #c2846c;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.skills .content .skillsBox:hover a{
+    color: #000;
+}
+.skills .content .skillsBox img{
+    max-width: 80px;
+    transition: 0.6s;
+}
+.skills .content .skillsBox:hover img{
+    filter: invert(1);
+}
+.skills .content .skillsBox h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.skills .content .skillsBox:hover h2{
+    color: #fff;
+}
+.skills .content .skillsBox p{
+    margin: 0;
+    transition: 0.5s;
+}
+.skills .content .skillsBox:hover p{
+    color: #fff;
+} 
+.projetos{
+    background: #292828;
+}
+.projetos .titulo p{
+    margin: 20px;
+    color: #fff;
+}
+.projetos .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.projetos .content .projetosBox{
+    position: relative;
+    width: 265px;
+    height: 265px;
+    margin: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+.projetos .content .projetosBox .imgBx,
+.projetos .content .projetosBox .textoBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projetos .content .projetosBox .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.projetos .content .projetosBox .textoBox{
+    background: #c2846c;
+    opacity: 0;
+    transition: 0.5s;
+}
+.projetos .content .projetosBox:hover .textoBox{
+    opacity: 1;
+    cursor: pointer;
+}
+.projetos .content .projetosBox .textoBox a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+.contato {
+    display: flex;
+    inset: 4px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+    padding: 50px 40px;
+    background: #222;
+}
+.boxContato{
+    position: relative;
+    width: 420px;
+    height: 500px;
+    background: #1c1c1c;
+    border-radius: 8px;
+}
+.boxContato form {
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.boxContato form h2{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.boxContato form .inputBox{
+    position: relative;
+    width: 340px;
+    margin-top: 35px;
+}
+.boxContato form .inputBox input, textarea {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.boxContato form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #a39090;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.boxContato form .inputBox input:valid ~ span,
+.boxContato form .inputBox input:focus ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.boxContato form .inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    
+}
+.boxContato form .inputBox input:valid ~ i,
+.boxContato form .inputBox input:focus ~ i{
+    height: 44px;
+}
+.boxContato form #envio{
+    background: #c2846c;
+    color: #000;
+    margin: 35px 70px;
+    padding: 10px 40px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 190px;
+}
+.boxContato form #envio:hover{
+    transform: scale(1.3);
+    transition: all 1s;
+}
+.copyright{
+    color: #fff;
+    background: #000;
+    text-align: center;
+    padding: 10px;
+}
+.copyright p{
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* media incompleto falta organizar itens para exibiçao e layout*/
+
+@media (max-width: 990px){
+    .banner .imgSidebar{
+        display: none;
+    }
+    .banner.contentBx, .sidebar{
+        width: 100%;
+        padding: 40px;
+    }
+    .logoText{
+        left: 40px;
+    }
+    .toggle{
+        right: 40px;
+    }
+    .sci{
+        left: 40px;
+    }
+    section {
+        padding: 40px;
+    }
+    .sobre .content{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .sobre .content .textoBox {
+        min-width: 100%;
+        width: 100%;
+    }
+    .sobre.content.imgBx {
+        margin-left: 0;
+    }
+}

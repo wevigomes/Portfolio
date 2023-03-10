@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="esconder" onclick="esconderMenu();"></div>
+
+    <section class="banner" id="home">
+
+        <div class="imgSidebar">
+            <img src="./assets/images/fundo.png" alt="">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">Portfolio</h5>
+            <div>
+                <h4><span>Wevilla Gomes</span></h4>
+                <h4>Estudante de Salesforce</h4>
+                <p>Minha landing page para acompanhar o desenvolvimento de meus projetos
+                    nas novas linguagens que venho aprendendo.
+                </p>
+                    <a href="#sobre" class="btn">Sobre</a>
+            </div>
+            <ul class="redes">
+                <li><a href="https://www.linkedin.com/in/wevillagomes" target="_blank"><img src="./assets/images/linkedin.png"></a></li>
+                <li><a href="https://github.com/wevigomes" target="_blank"><img src="./assets/images/github.png"></a></li>
+                <li><a href="https://wa.me/5593992405042" target="_blank"><img src="./assets/images/whatsapp.png"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="titulo branco">
+            <h2>Sobre mim</h2>
+        </div>
+        <div class="content">
+            <div class="textoBox">
+                <p>Tenho 27 anos, moro atualmente em Santarém - PA. <br>
+                    Cursando Desenvolvimento Salesforce e tecnologias voltadas para o back-end.<br>
+                    Amante de MOBA, ciclismo e praia. 
+                </p>
+                    <p><img src="./assets/images/meugif.gif" id="gif"></p>
+            </div>
+            <div class="imgBx">
+                <img src="./assets/images//laptop.jpg" >
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="titulo">
+            <h2>Habilidades</h2>
+        </div>
+        <div class="content">
+            <div class="skillsBox">
+                <img src="./assets/images/programação.png">
+                <h2>Aprendendo Front-end</h2>
+                <p>Formação em andamento na  <a href="https://addianto.com.br/" target="_blank">Addianto</a> e trabalhando habilidades em HTML e CSS. Buscando desenvolver
+                projetos para melhorar as mesmas. </p>
+            </div>
+            <div class="skillsBox">
+                <img src="./assets/images/node-js-128.png">
+                <h2>Node.js</h2>
+                <p>Durante o curso de Lógica de programação na <a href="https://blueedtech.com.br/" target="_blank">Blue EdTech</a> desenvolvi
+                alguns projetos em Node.js. Alguns como jogo dos jutsus(jogo da velha) e jornada do héroi. Disponíveis no meu <a href="https://github.com/wevigomes/ModuloB"
+                 target="_blank">Github</a>.</p>
+            </div>
+            <div class="skillsBox">
+                <img src="./assets/images/salesforce-150.png">
+                <h2>Aprendendo Salesforce</h2>
+                <p>Formação em andamento de 6 meses pela <a href="https://addianto.com.br/" target="_blank">Addianto</a>.
+                     <br> Aprendendo fundamentos em Apex no momento. </p>
+            </div>
+            <div class="skillsBox">
+                <img src="./assets/images/icons8-suporte-150.png">
+                <h2>Suporte em TI</h2>
+                <p>Formação em andamento pelo <a href="https://www.coursera.org/programs/grow-with-google-mlf5u?currentTab=CATALOG" target="
+                    ">Coursera</a> onde a Google e Ciee ofertaram bolsas para técnico em TI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <div class="titulo">
+            <h2>Projetos Recentes</h2>
+            <p> Estes são alguns dos trabalhos disponíveis no Github dos quais participei.
+            </p>
+        </div>
+        <div class="content">
+            <div class="projetosBox">
+                <div class="imgBx">
+                    <img src="./assets/images/barbearia.png">
+                </div>
+                <div class="textoBox">
+                    <h3><a href="https://github.com/wevigomes/ExerciciosAntigos/tree/main/BarbeariaAlura"
+                        target="_blank">Projeto Barbearia</a></h3>
+                </div>
+            </div>
+            <div class="projetosBox">
+                <div class="imgBx">
+                    <img src="./assets/images/mundoInvert.png">
+                </div>
+                <div class="textoBox">
+                    <h3><a href="https://github.com/wevigomes/ExerciciosAntigos/tree/main/mundo-invertido"
+                        target="_blank">Projeto Mundo Invertido</a></h3>
+                </div>
+            </div>
+            <div class="projetosBox">
+                <div class="imgBx">
+                    <img src="./assets/images/loginRef.png">
+                </div>
+                <div class="textoBox">
+                    <h3><a href="https://github.com/wevigomes/ExerciciosAntigos/tree/main/login"
+                        target="_blank">Projeto Login</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="boxContato"> 
+            <form>
+                <h2>Contato</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Nome</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="email" required="required">
+                    <span>Email</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <textarea cols="50" rows="2" required="required"></textarea>
+                    <span>Mensagem</span>
+                    <i></i>
+                </div>
+                <button type="submit" id="envio"> Enviar
+            </form>       
+        </div>
+
+    </section>
+    <div class="copyright">
+        <p>Copyright &copy; Wevilla Gomes - 2023</p></div>
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="esconderMenu();">Inicio</a></li>
+            <li><a href="#sobre" onclick="esconderMenu();">Sobre</a></li>
+            <li><a href="#skills" onclick="esconderMenu();">Serviços</a></li>
+            <li><a href="#projetos" onclick="esconderMenu();">Projetos</a></li>
+            <li><a href="#contato" onclick="esconderMenu();">Contato</a></li>
+        </ul>
+    </div>
+
+    <script src="./assets/js/link.js"></script>
+</body>
+</html>
